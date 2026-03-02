@@ -3,20 +3,27 @@
 <head>
     <title>Student Performance Predictor</title>
 </head>
-<body>
-    <h2>Student Performance Prediction</h2>
+    <body style="font-family: Arial; text-align:center;">
 
-    <form action="/predict" method="post">
-        Study Hours: <input type="number" step="any" name="study_hours"><br><br>
-        Attendance: <input type="number" step="any" name="attendance"><br><br>
-        Previous Marks: <input type="number" step="any" name="previous_marks"><br><br>
-        Sleep Hours: <input type="number" step="any" name="sleep_hours"><br><br>
-        Internet Usage: <input type="number" step="any" name="internet_usage"><br><br>
+<h2>Student Performance Prediction</h2>
 
-        <button type="submit">Predict</button>
-    </form>
+<form action="/predict" method="post">
 
-    <h3>{{ prediction_text }}</h3>
+    <input type="number" step="any" name="study_hours" placeholder="Study Hours"><br><br>
 
-</body>
+    <input type="number" step="any" name="attendance" placeholder="Attendance"><br><br>
+
+    <input type="number" step="any" name="previous_marks" placeholder="Previous Marks"><br><br>
+
+    <input type="number" step="any" name="sleep_hours" placeholder="Sleep Hours"><br><br>
+
+    <input type="number" step="any" name="internet_usage" placeholder="Internet Usage"><br><br>
+
+    <button type="submit">Predict</button>
+
+</form>
+
+<h3>{{ prediction_text }}</h3>
+
+    </body>
 </html>
